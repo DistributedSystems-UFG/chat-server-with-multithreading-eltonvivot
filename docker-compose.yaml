@@ -1,0 +1,39 @@
+version: '3'
+
+services:
+  chatserver:
+    container_name: chatserver
+    build: .
+    image: sd
+    volumes:
+     - ./chatserver.py:/app/chatserver.py
+     - ./const.py:/app/const.py
+    networks:
+      - chatnet
+    tty: true
+  
+  chatclient1:
+    container_name: chatclient1
+    build: .
+    image: sd
+    volumes:
+     - ./chatclient.py:/app/chatclient.py
+     - ./const.py:/app/const.py
+    networks:
+      - chatnet
+    tty: true
+  
+  chatclient2:
+    container_name: chatclient2
+    build: .
+    image: sd
+    volumes:
+     - ./chatclient.py:/app/chatclient.py
+     - ./const.py:/app/const.py
+    networks:
+      - chatnet
+    tty: true
+
+networks:
+  chatnet:
+    driver: bridge
