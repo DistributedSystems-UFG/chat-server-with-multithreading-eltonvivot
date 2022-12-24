@@ -5,3 +5,6 @@ The app has a very simple client-server architecture. Students can identify limi
 Overall architecture of this first version of the app (discussed in classroom):
 
 ![Chat Design - client-server](https://user-images.githubusercontent.com/13460193/173588387-89793ac9-17b9-4441-986b-53cac6ee40f4.png)
+
+# Video
+https://drive.google.com/file/d/17E7sIsFidMFLHhQuunlnMs9iLcBP_CPQ/view?usp=share_link
